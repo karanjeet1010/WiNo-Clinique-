@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notre Histoire - Clinique Dentaire du Maroc</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <style>
+    .material-icons {
+      font-size: inherit;
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#003266",
+            "background-light": "#FFFFFF",
+            "background-dark": "#0f172a",
+          },
+          fontFamily: {
+            display: ["Montserrat", "sans-serif"],
+            sans: ["Roboto", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "1rem",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-sans text-slate-700 dark:text-slate-300 antialiased">
+<div class="relative">
+
+<header class="absolute top-0 left-0 right-0 z-20 py-4">
+  <div class="container mx-auto px-6">
+    <nav class="flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3">
+        <!-- LOGO IMAGE (LOCAL) -->
+        <div class="w-10 h-10 overflow-hidden rounded-full flex items-center justify-center bg-white shadow">
+          <img
+            src="../assets/images/log.jpg"
+            alt="Logo de la clinique"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <span class="font-display font-bold text-xl text-slate-800 dark:text-white">
+          WiNo Clinique
+        </span>
+      </a>
+
+      <ul class="hidden lg:flex items-center space-x-8 text-slate-700 dark:text-slate-200">
+        <li>
+          <a class="hover:text-primary dark:hover:text-white transition-colors duration-300" href="index.html">
+            <span data-lang="fr">Accueil</span>
+            <span data-lang="en" class="hidden">Home</span>
+          </a>
+        </li>
+        <li>
+          <a class="hover:text-primary dark:hover:text-white transition-colors duration-300" href="story.html">
+            <span data-lang="fr">Notre Histoire</span>
+            <span data-lang="en" class="hidden">Our Story</span>
+          </a>
+        </li>
+        <li>
+          <a class="hover:text-primary dark:hover:text-white transition-colors duration-300" href="services.html">
+            <span data-lang="fr">Services</span>
+            <span data-lang="en" class="hidden">Services</span>
+          </a>
+        </li>
+        <li>
+          <a class="hover:text-primary dark:hover:text-white transition-colors duration-300" href="team.html">
+            <span data-lang="fr">Équipe</span>
+            <span data-lang="en" class="hidden">Team</span>
+          </a>
+        </li>
+        <li>
+          <a class="hover:text-primary dark:hover:text-white transition-colors duration-300" href="contact.html">
+            <span data-lang="fr">Contact</span>
+            <span data-lang="en" class="hidden">Contact</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="flex items-center space-x-4">
+        <a
+          href="appointment.html"
+          class="hidden lg:inline-block bg-primary text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity duration-300 shadow-lg"
+        >
+          <span data-lang="fr">Prendre rendez-vous</span>
+          <span data-lang="en" class="hidden">Book appointment</span>
+        </a>
+
+        <div class="flex items-center space-x-1 bg-white/80 dark:bg-slate-800/80 rounded-full px-2 py-1 shadow">
+          <button
+            type="button"
+            data-set-lang="fr"
+            class="px-2 text-xs font-semibold rounded-full border border-transparent hover:border-primary"
+          >
+            FR
+          </button>
+          <button
+            type="button"
+            data-set-lang="en"
+            class="px-2 text-xs font-semibold rounded-full border border-transparent hover:border-primary"
+          >
+            EN
+          </button>
+        </div>
+
+        <!-- Theme toggle -->
+          <button
+            type="button"
+            data-toggle-theme
+            class="w-9 h-9 flex items-center justify-center rounded-full bg-white/80 dark:bg-slate-800/80 shadow text-slate-800 dark:text-yellow-300 text-xl"
+            aria-label="Toggle dark mode"
+          >
+            <span class="material-icons" data-theme-icon="light">dark_mode</span>
+            <span class="material-icons hidden" data-theme-icon="dark">light_mode</span>
+          </button>
+
+        <button class="lg:hidden text-slate-800 dark:text-white">
+          <span class="material-icons">menu</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="relative pt-24 md:pt-28 pb-20">
+  <section class="bg-slate-50 dark:bg-slate-800 py-16 md:py-20">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <span class="text-primary font-semibold uppercase tracking-wider">
+        <span data-lang="fr">Notre Histoire</span>
+        <span data-lang="en" class="hidden">Our Story</span>
+      </span>
+      <h1 class="font-display font-bold text-3xl md:text-4xl mt-2 mb-6 text-slate-900 dark:text-white">
+        <span data-lang="fr">Une clinique fondée sur la confiance et l'écoute</span>
+        <span data-lang="en" class="hidden">A clinic built on trust and listening</span>
+      </h1>
+      <div class="space-y-4 text-lg leading-relaxed">
+        <p>
+          <span data-lang="fr">
+            Depuis sa création, la Clinique Dentaire du Maroc a pour mission d'offrir des soins modernes et accessibles, tout en plaçant le patient au centre de chaque décision.
+          </span>
+          <span data-lang="en" class="hidden">
+            Since its creation, Clinique Dentaire du Maroc has been committed to providing modern and accessible care while keeping the patient at the center of every decision.
+          </span>
+        </p>
+        <p>
+          <span data-lang="fr">
+            Notre équipe regroupe des praticiens passionnés par leur métier, qui prennent le temps de comprendre vos besoins, vos attentes et parfois même vos appréhensions.
+          </span>
+          <span data-lang="en" class="hidden">
+            Our team is made up of passionate professionals who take the time to understand your needs, expectations and even your fears.
+          </span>
+        </p>
+        <p>
+          <span data-lang="fr">
+            Grâce à un plateau technique de dernière génération et à une formation continue, nous proposons des traitements fondés sur les meilleures pratiques actuelles.
+          </span>
+          <span data-lang="en" class="hidden">
+            With state-of-the-art equipment and continuous training, we offer treatments based on today's best practices.
+          </span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20 bg-white dark:bg-slate-900">
+    <div class="container mx-auto px-6 max-w-4xl space-y-8">
+      <div>
+        <h2 class="font-display font-semibold text-2xl md:text-3xl mb-3 text-slate-900 dark:text-white">
+          <span data-lang="fr">Une vision moderne de la dentisterie</span>
+          <span data-lang="en" class="hidden">A modern vision of dentistry</span>
+        </h2>
+        <p class="text-lg leading-relaxed">
+          <span data-lang="fr">
+            Nous croyons qu'un sourire en bonne santé commence par une relation de confiance. C’est pourquoi nous
+            prenons le temps d’expliquer chaque étape du traitement et de répondre à toutes vos questions.
+          </span>
+          <span data-lang="en" class="hidden">
+            We believe a healthy smile starts with a relationship built on trust. That’s why we take time to explain
+            every step of your treatment and answer all your questions.
+          </span>
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="p-5 rounded-lg bg-slate-50 dark:bg-slate-800/70 shadow-sm">
+          <h3 class="font-semibold mb-2">
+            <span data-lang="fr">Écoute</span>
+            <span data-lang="en" class="hidden">Listening</span>
+          </h3>
+          <p class="text-sm">
+            <span data-lang="fr">Nous prenons le temps de vous connaître et de comprendre vos attentes.</span>
+            <span data-lang="en" class="hidden">We take the time to get to know you and understand your expectations.</span>
+          </p>
+        </div>
+        <div class="p-5 rounded-lg bg-slate-50 dark:bg-slate-800/70 shadow-sm">
+          <h3 class="font-semibold mb-2">
+            <span data-lang="fr">Confiance</span>
+            <span data-lang="en" class="hidden">Trust</span>
+          </h3>
+          <p class="text-sm">
+            <span data-lang="fr">Chaque décision est prise avec vous, en toute transparence.</span>
+            <span data-lang="en" class="hidden">Every decision is made with you, in full transparency.</span>
+          </p>
+        </div>
+        <div class="p-5 rounded-lg bg-slate-50 dark:bg-slate-800/70 shadow-sm">
+          <h3 class="font-semibold mb-2">
+            <span data-lang="fr">Innovation</span>
+            <span data-lang="en" class="hidden">Innovation</span>
+          </h3>
+          <p class="text-sm">
+            <span data-lang="fr">Nous utilisons des technologies modernes pour des soins plus confortables.</span>
+            <span data-lang="en" class="hidden">We use modern technology to make treatments more comfortable.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-slate-200 dark:border-slate-700 py-6">
+  <div class="container mx-auto px-6 text-sm text-slate-500 dark:text-slate-400 flex flex-col md:flex-row items-center justify-between gap-3">
+    <p>
+      <span data-lang="fr">© 2025 Clinique Dentaire du Maroc. Tous droits réservés.</span>
+      <span data-lang="en" class="hidden">© 2025 Clinique Dentaire du Maroc. All rights reserved.</span>
+    </p>
+    <p>
+      <span data-lang="fr">Créé avec soin pour votre sourire.</span>
+      <span data-lang="en" class="hidden">Created with care for your smile.</span>
+    </p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    const htmlEl = document.documentElement;
+    const langButtons = document.querySelectorAll("[data-set-lang]");
+    const langElements = document.querySelectorAll("[data-lang]");
+
+    function setLang(lang) {
+      // Show / hide text
+      langElements.forEach((el) => {
+        el.classList.toggle("hidden", el.dataset.lang !== lang);
+      });
+
+      // Button styles
+      langButtons.forEach((btn) => {
+        const isActive = btn.dataset.setLang === lang;
+        btn.classList.toggle("bg-primary", isActive);
+        btn.classList.toggle("text-white", isActive);
+      });
+
+      // Update html lang attribute + remember choice
+      htmlEl.setAttribute("lang", lang);
+      localStorage.setItem("siteLang", lang);
+    }
+
+    // Init from storage or default FR
+    const initialLang = localStorage.getItem("siteLang") || "fr";
+    setLang(initialLang);
+
+    // Click handlers
+    langButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        setLang(btn.dataset.setLang);
+      });
+    });
+  })();
+
+  // DARK / LIGHT THEME TOGGLE
+  (function () {
+    const htmlEl = document.documentElement;
+    const themeToggleBtn = document.querySelector("[data-toggle-theme]");
+    const lightIcon = document.querySelector('[data-theme-icon="light"]');
+    const darkIcon = document.querySelector('[data-theme-icon="dark"]');
+
+    if (!themeToggleBtn) return;
+
+    function applyTheme(theme) {
+      if (theme === "dark") {
+        htmlEl.classList.add("dark");
+      } else {
+        htmlEl.classList.remove("dark");
+      }
+      localStorage.setItem("siteTheme", theme);
+
+      if (lightIcon && darkIcon) {
+        const isDark = theme === "dark";
+        lightIcon.classList.toggle("hidden", !isDark);
+        darkIcon.classList.toggle("hidden", isDark);
+      }
+    }
+
+    const stored = localStorage.getItem("siteTheme");
+    const prefersDark = window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    const initialTheme = stored || (prefersDark ? "dark" : "light");
+    applyTheme(initialTheme);
+
+    themeToggleBtn.addEventListener("click", () => {
+      const newTheme = htmlEl.classList.contains("dark") ? "light" : "dark";
+      applyTheme(newTheme);
+    });
+  })();
+</script>
+</div>
+</body>
+</html>
+  
